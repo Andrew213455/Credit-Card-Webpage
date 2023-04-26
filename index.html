@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="header"></section>
+    <main>
+      <section class="front-of-card">
+        <section class="top-front">
+          <div id="white-circle"></div>
+          <div id="small-circle"></div>
+        </section>
+        <section class="bottom-front">
+          <div class="card-number-box">
+            <p class="card-number">0000 0000 0000 0000</p>
+          </div>
+          <div class="name-exp">
+            <p class="name">Jane Appleseed</p>
+            <p class="exp1">00</p>
+            <p class="slash">/</p>
+            <p class="exp2">00</p>
+          </div>
+        </section>
+      </section>
+      <div class="back-of-card-box">
+        <section class="back-of-card">
+          <p class="cvv">000</p>
+        </section>
+      </div>
+      <section class="form-container">
+        <form class="form">
+          <label for="name"> CARDHOLDER NAME</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="e.g. Jane Appleseed"
+            class="card-inp"
+          />
+          <label for="">CARD NUMBER</label>
+          <input
+            type="text"
+            name=""
+            id="number"
+            placeholder="e.g. 1234 5678 9123 0000"
+            class="card-inp"
+          />
+          <div class="labels-box">
+            <label for="exp-date" class="exp-label">EXP. DATE (MM/YY)</label>
+            <label for="cvv">CVV</label>
+          </div>
+          <div class="bottom-inp">
+            <input
+              type="text"
+              id="exp-date1"
+              placeholder="MM"
+              class="small-inp"
+            />
+            <input
+              type="text"
+              id="exp-date2"
+              placeholder="YY"
+              class="small-inp"
+            />
+            <input
+              type="text"
+              id="cvv"
+              placeholder="e.g. 123"
+              class="big-inp cvc-inp"
+            />
+          </div>
+          <button class="confirm-button">Confirm</button>
+        </form>
+      </section>
+      <section class="completed-form-box">
+        <section class="completed-form">
+          <div class="logo"><img src="/images/icon-complete.svg" alt=""></div>
+          <p id="thank-you">Thank you!</p>
+          <p id="thanks-p">We've added your card details</p>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="continue-button">Continue</a> 
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

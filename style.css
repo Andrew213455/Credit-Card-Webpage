@@ -1,0 +1,272 @@
+/* resets! */
+
+body,
+main,
+form,
+section {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+}
+
+.header {
+  height: 250px;
+  background-image: url(/images/bg-main-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.front-of-card {
+  background-image: url(/images/bg-card-front.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 15px;
+  margin-right: 100px;
+  border-radius: 15px;
+  padding: 15px;
+  position: absolute;
+  width: 300px;
+  height: 170px;
+  top: 100px;
+  z-index: 1;
+}
+
+.top-front {
+  display: flex;
+  align-items: center;
+}
+
+#white-circle {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#small-circle {
+  width: 15px;
+  height: 15px;
+  border: white 1px solid;
+  border-radius: 50%;
+}
+
+.bottom-front {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.card-number-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.75px;
+}
+
+.name-exp {
+  display: flex;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.exp1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.slash {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+}
+
+.exp2 {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.back-of-card {
+  background-image: url(/images/bg-card-back.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 170px;
+  z-index: 0.5;
+  margin: 20px;
+}
+
+.back-of-card p {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  right: 10%;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  margin: 20px;
+}
+
+label {
+  font-weight: bold;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 2px;
+}
+
+input {
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-size: 1.2em;
+  letter-spacing: 1.75px;
+  width: 100%;
+}
+
+.exp-label {
+  margin-right: 15%;
+}
+
+.card-inp {
+  padding: 10px;
+  margin-bottom: 4%;
+  font-family: "Space Grotesk", sans-serif;
+  width: 90%;
+}
+
+.small-inp {
+  font-family: "Space Grotesk", sans-serif;
+  width: 14%;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.big-inp {
+  font-family: "Space Grotesk", sans-serif;
+  width: 51%;
+  padding: 10px;
+}
+
+.cvc-inp {
+  margin-right: 0;
+}
+
+.confirm-button {
+  background-image: url(/images/bg-main-desktop.png);
+  background-size: cover;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 6%;
+  margin-bottom: 10%;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5em;
+  color: white;
+  width: 95%;
+}
+
+.confirm-button:hover {
+  transition: 0.5s;
+  padding: 25px;
+}
+
+.completed-form {
+  display: none;
+  position: absolute;
+  text-align: center;
+  color: black;
+  top: 55%;
+  left: 30%;
+}
+
+.completed-form-box {
+  display: static;
+}
+
+#thanks-p {
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 40px;
+}
+
+#thank-you {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.continue-button {
+  background-image: url(/images/bg-main-desktop.png);
+  background-size: cover;
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  margin-bottom: 10%;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5em;
+  color: white;
+  width: 300px;
+}
+
+.continue-button:hover {
+  transition: 0.5s;
+  padding: 20px 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    width: 300px;
+    height: 100vh;
+  }
+
+  .front-of-card {
+    position: absolute;
+    left: 1%;
+  }
+
+  .back-of-card-box {
+    position: absolute;
+    top: 45%;
+    left: 7%;
+  }
+
+  .back-of-card {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .form-container {
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+  }
+
+  .big-inp {
+    width: 44%;
+  }
+
+  .completed-form {
+    width: 300px;
+    top: 30%;
+    left: 55%;
+  }
+}
